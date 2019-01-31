@@ -186,6 +186,9 @@
             this.lb4status = new System.Windows.Forms.Label();
             this.timer4net = new System.Windows.Forms.Timer(this.components);
             this.timer4dskchk = new System.Windows.Forms.Timer(this.components);
+            this.btn4devmgmt = new System.Windows.Forms.Button();
+            this.btn4diskmgmt = new System.Windows.Forms.Button();
+            this.btn4control = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic4dsk6)).BeginInit();
@@ -1532,11 +1535,13 @@
             // 
             // txt4netapi
             // 
+            this.txt4netapi.BackColor = System.Drawing.Color.White;
             this.txt4netapi.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.txt4netapi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txt4netapi.Location = new System.Drawing.Point(593, 32);
             this.txt4netapi.Multiline = true;
             this.txt4netapi.Name = "txt4netapi";
+            this.txt4netapi.ReadOnly = true;
             this.txt4netapi.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txt4netapi.Size = new System.Drawing.Size(380, 500);
             this.txt4netapi.TabIndex = 0;
@@ -1688,6 +1693,7 @@
             this.txt4myhosts.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.txt4myhosts.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txt4myhosts.Location = new System.Drawing.Point(3, 96);
+            this.txt4myhosts.MaxLength = 99999999;
             this.txt4myhosts.Multiline = true;
             this.txt4myhosts.Name = "txt4myhosts";
             this.txt4myhosts.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -1696,6 +1702,9 @@
             // 
             // tabPage5
             // 
+            this.tabPage5.Controls.Add(this.btn4control);
+            this.tabPage5.Controls.Add(this.btn4diskmgmt);
+            this.tabPage5.Controls.Add(this.btn4devmgmt);
             this.tabPage5.Controls.Add(this.btn4mstsc);
             this.tabPage5.Controls.Add(this.label57);
             this.tabPage5.Controls.Add(this.btn4runreg);
@@ -1718,7 +1727,7 @@
             this.btn4mstsc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(87)))), ((int)(((byte)(78)))));
             this.btn4mstsc.Location = new System.Drawing.Point(27, 307);
             this.btn4mstsc.Name = "btn4mstsc";
-            this.btn4mstsc.Size = new System.Drawing.Size(102, 31);
+            this.btn4mstsc.Size = new System.Drawing.Size(136, 31);
             this.btn4mstsc.TabIndex = 47;
             this.btn4mstsc.Text = "远程控制";
             this.btn4mstsc.UseVisualStyleBackColor = true;
@@ -1740,7 +1749,7 @@
             this.btn4runreg.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btn4runreg.Location = new System.Drawing.Point(27, 146);
             this.btn4runreg.Name = "btn4runreg";
-            this.btn4runreg.Size = new System.Drawing.Size(102, 31);
+            this.btn4runreg.Size = new System.Drawing.Size(136, 31);
             this.btn4runreg.TabIndex = 45;
             this.btn4runreg.Text = "注册表";
             this.btn4runreg.UseVisualStyleBackColor = true;
@@ -1753,7 +1762,7 @@
             this.btn4rungpedit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(87)))), ((int)(((byte)(78)))));
             this.btn4rungpedit.Location = new System.Drawing.Point(27, 270);
             this.btn4rungpedit.Name = "btn4rungpedit";
-            this.btn4rungpedit.Size = new System.Drawing.Size(102, 31);
+            this.btn4rungpedit.Size = new System.Drawing.Size(136, 31);
             this.btn4rungpedit.TabIndex = 44;
             this.btn4rungpedit.Text = "组策略";
             this.btn4rungpedit.UseVisualStyleBackColor = true;
@@ -1766,7 +1775,7 @@
             this.btn4runservices.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(87)))), ((int)(((byte)(78)))));
             this.btn4runservices.Location = new System.Drawing.Point(27, 233);
             this.btn4runservices.Name = "btn4runservices";
-            this.btn4runservices.Size = new System.Drawing.Size(102, 31);
+            this.btn4runservices.Size = new System.Drawing.Size(136, 31);
             this.btn4runservices.TabIndex = 43;
             this.btn4runservices.Text = "服务";
             this.btn4runservices.UseVisualStyleBackColor = true;
@@ -1799,7 +1808,7 @@
             this.btn4runcmd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btn4runcmd.Location = new System.Drawing.Point(27, 109);
             this.btn4runcmd.Name = "btn4runcmd";
-            this.btn4runcmd.Size = new System.Drawing.Size(102, 31);
+            this.btn4runcmd.Size = new System.Drawing.Size(136, 31);
             this.btn4runcmd.TabIndex = 25;
             this.btn4runcmd.Text = "CMD";
             this.btn4runcmd.UseVisualStyleBackColor = true;
@@ -1889,6 +1898,42 @@
             this.timer4dskchk.Enabled = true;
             this.timer4dskchk.Interval = 5000;
             this.timer4dskchk.Tick += new System.EventHandler(this.timer4dskchk_Tick);
+            // 
+            // btn4devmgmt
+            // 
+            this.btn4devmgmt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn4devmgmt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn4devmgmt.Location = new System.Drawing.Point(169, 109);
+            this.btn4devmgmt.Name = "btn4devmgmt";
+            this.btn4devmgmt.Size = new System.Drawing.Size(136, 31);
+            this.btn4devmgmt.TabIndex = 48;
+            this.btn4devmgmt.Text = "设备管理器";
+            this.btn4devmgmt.UseVisualStyleBackColor = true;
+            this.btn4devmgmt.Click += new System.EventHandler(this.btn4devmgmt_Click);
+            // 
+            // btn4diskmgmt
+            // 
+            this.btn4diskmgmt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn4diskmgmt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn4diskmgmt.Location = new System.Drawing.Point(169, 146);
+            this.btn4diskmgmt.Name = "btn4diskmgmt";
+            this.btn4diskmgmt.Size = new System.Drawing.Size(136, 31);
+            this.btn4diskmgmt.TabIndex = 49;
+            this.btn4diskmgmt.Text = "磁盘管理";
+            this.btn4diskmgmt.UseVisualStyleBackColor = true;
+            this.btn4diskmgmt.Click += new System.EventHandler(this.btn4diskmgmt_Click);
+            // 
+            // btn4control
+            // 
+            this.btn4control.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn4control.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn4control.Location = new System.Drawing.Point(311, 109);
+            this.btn4control.Name = "btn4control";
+            this.btn4control.Size = new System.Drawing.Size(136, 31);
+            this.btn4control.TabIndex = 50;
+            this.btn4control.Text = "控制面板";
+            this.btn4control.UseVisualStyleBackColor = true;
+            this.btn4control.Click += new System.EventHandler(this.btn4control_Click);
             // 
             // Form1
             // 
@@ -2087,6 +2132,9 @@
         private System.Windows.Forms.PictureBox pic4dsk5;
         private System.Windows.Forms.PictureBox pic4dsk3;
         private System.Windows.Forms.PictureBox pic4dsk1;
+        private System.Windows.Forms.Button btn4devmgmt;
+        private System.Windows.Forms.Button btn4diskmgmt;
+        private System.Windows.Forms.Button btn4control;
     }
 }
 

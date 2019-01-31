@@ -968,5 +968,47 @@ namespace CainAdmin
         {
             Process.Start("https://hosts.nfz.moe/127.0.0.1/full/hosts");
         }
+        private void btn4devmgmt_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Process.Start(@"cmd\devmgmt.bat");
+                gettimestamp();
+                lb4status.Text = "//设备管理器打开成功！" + timestamp;
+            }
+            catch
+            {
+                gettimestamp();
+                lb4status.Text = "//设备管理器打开失败！" + timestamp;
+            }
+        }
+        private void btn4diskmgmt_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Process.Start(@"cmd\diskmgmt.bat");
+                gettimestamp();
+                lb4status.Text = "//磁盘管理打开成功！" + timestamp;
+            }
+            catch
+            {
+                gettimestamp();
+                lb4status.Text = "//磁盘管理打开失败！" + timestamp;
+            }
+        }
+        private void btn4control_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Process.Start(@"cmd\control.bat");
+                gettimestamp();
+                lb4status.Text = "//控制面板打开成功！" + timestamp;
+            }
+            catch
+            {
+                gettimestamp();
+                lb4status.Text = "//控制面板打开失败！" + timestamp;
+            }
+        }
     }
 }
