@@ -1,0 +1,16 @@
+#------ 屏蔽腾讯视频广告 ------
+127.0.0.1 adslvfile.qq.com
+127.0.0.1 adsfile.qq.com
+127.0.0.1 play.qq.com
+127.0.0.1 adslvfile.qq.com
+127.0.0.1 tj.video.qq.com
+127.0.0.1 vv.video.qq.com
+127.0.0.1 livep.l.qq.com
+127.0.0.1 rcgi.video.qq.com
+127.0.0.1 aid.video.qq.com
+127.0.0.1 pinghot.qq.com
+127.0.0.1 54kfqq.com
+127.0.0.1 vhotlxp.video.qq.com
+127.0.0.1 livem.l.qq.com
+127.0.0.1 adsrich.qq.com
+#------ 屏蔽腾讯视频广告 ------
