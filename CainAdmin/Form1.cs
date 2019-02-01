@@ -42,10 +42,11 @@ namespace CainAdmin
         string HDID;
         string HDSN;
         string vername;
+        int ptnum = 0;//分区数量
         //============变量&方法分割线==========//
         void sysispro()//判断系统是否为专业版
         {
-            if (vername.Contains("专业版"))
+            if (vername.Contains("专业")|| vername.Contains("企业"))
             {
                 //txt4test.Text += "\r\n是专业版";
                 btn4rungpedit.Enabled = true;
@@ -62,12 +63,6 @@ namespace CainAdmin
         void mainload()//主载入，载入logo图片
         {
             pic4logo.ImageLocation = @"img\logo.png";
-            pic4dsk1.ImageLocation = @"img\disk.png";
-            pic4dsk2.ImageLocation = @"img\disk.png";
-            pic4dsk3.ImageLocation = @"img\disk.png";
-            pic4dsk4.ImageLocation = @"img\disk.png";
-            pic4dsk5.ImageLocation = @"img\disk.png";
-            pic4dsk6.ImageLocation = @"img\disk.png";
         }
         void showmain()//显示版本号
         {
@@ -581,15 +576,85 @@ namespace CainAdmin
                 }
             }
         }
+        void clrdskinfo()//清空磁盘使用情况
+        {
+            pic4dsk1.Visible = false;
+            lb4dsk1.Visible = false;
+            lb4usg1.Visible = false;
+            lb4dsktol1.Visible = false;
+            lb4dskval1.Visible = false;
+            pic4dsk2.Visible = false;
+            lb4dsk2.Visible = false;
+            lb4usg2.Visible = false;
+            lb4dsktol2.Visible = false;
+            lb4dskval2.Visible = false;
+            pic4dsk3.Visible = false;
+            lb4dsk3.Visible = false;
+            lb4usg3.Visible = false;
+            lb4dsktol3.Visible = false;
+            lb4dskval3.Visible = false;
+            pic4dsk4.Visible = false;
+            lb4dsk4.Visible = false;
+            lb4usg4.Visible = false;
+            lb4dsktol4.Visible = false;
+            lb4dskval4.Visible = false;
+            pic4dsk5.Visible = false;
+            lb4dsk5.Visible = false;
+            lb4usg5.Visible = false;
+            lb4dsktol5.Visible = false;
+            lb4dskval5.Visible = false;
+            pic4dsk6.Visible = false;
+            lb4dsk6.Visible = false;
+            lb4usg6.Visible = false;
+            lb4dsktol6.Visible = false;
+            lb4dskval6.Visible = false;
+        }
         void getlocaldskinfo()//获取磁盘信息
         {
             ManagementClass diskClass = new ManagementClass("Win32_LogicalDisk");
             ManagementObjectCollection disks = diskClass.GetInstances();
             int dsknum = 1;
+            if(ptnum != disks.Count)
+            {
+                ptnum = disks.Count;
+                clrdskinfo();
+            }
             foreach (ManagementObject disk in disks)
             {
                 try
                 {
+                    void dskarr()
+                    {
+                        var pic4dsk = Controls.Find("pic4dsk" + dsknum.ToString(), true)[0] as PictureBox;
+                        pic4dsk.ImageLocation = @"img\hddbd.png";
+                        if (disk["Description"].ToString().Contains("移动"))
+                        {
+                            pic4dsk.ImageLocation = @"img\usb.png";
+                        }
+                        var lb4dsk = Controls.Find("lb4dsk" + dsknum.ToString(), true)[0] as Label;
+                        var lb4dskval = Controls.Find("lb4dskval" + dsknum.ToString(), true)[0] as Label;
+                        var lb4usg = Controls.Find("lb4usg" + dsknum.ToString(), true)[0] as Label;
+                        var lb4dsktol = Controls.Find("lb4dsktol" + dsknum.ToString(), true)[0] as Label;
+                        lb4dsk.Text = disk["VolumeName"].ToString() + "（" + disk["Name"].ToString() + "）";
+                        lb4dskval.Width = (int)(usage * 160);
+                        lb4dskval.Text = ((int)(usage * 100)).ToString() + "%";
+                        lb4usg.Text = "已用" + usedSpace.ToString() + "GB；剩余" + freeSpace.ToString() + "GB";
+                        lb4dsk.Visible = true;
+                        lb4dskval.Visible = true;
+                        lb4dsktol.Visible = true;
+                        lb4usg.Visible = true;
+                        pic4dsk.Visible = true;
+                        if (usage > dskusgalert)
+                        {
+                            lb4dskval.BackColor = Color.DimGray;
+                            lb4dskval.Text += " 危险";
+                        }
+                        else
+                        {
+                            lb4dskval.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(87)))), ((int)(((byte)(78)))));
+                            lb4dskval.Text = ((int)(usage * 100)).ToString() + "%";
+                        }
+                    }
                     // 磁盘名称
                     //txt4test.Text += "\r\n磁盘名称：" + disk["VolumeName"].ToString() + "（" + disk["Name"].ToString() + "）";
                     // 磁盘描述
@@ -606,174 +671,44 @@ namespace CainAdmin
                         //txt4test.Text += "\r\n空闲：" + freeSpace.ToString() + "GB";
                         //txt4test.Text += "\r\n使用率：" + (usage.ToString("0.00")).Substring(2) + "%";
                     }
+                    //dskarr();
                     switch (dsknum)
                     {
                         case 1:
-                            if (disk["Description"].ToString().Contains("移动"))
-                            {
-                                pic4dsk1.ImageLocation = @"img\usb.png";
-                            }
-                            lb4dsk1.Text = disk["VolumeName"].ToString() + "（" + disk["Name"].ToString() + "）";
-                            lb4dskval1.Width = (int)(usage * 160);
-                            lb4dskval1.Text = ((int)(usage*100)).ToString() + "%";
-                            lb4usg1.Text = "已用"+usedSpace.ToString() + "GB；剩余" + freeSpace.ToString() + "GB";
-                            lb4dsk1.Visible = true;
-                            lb4dskval1.Visible = true;
-                            lb4dsktol1.Visible = true;
-                            lb4usg1.Visible = true;
-                            pic4dsk1.Visible = true;
-                            if (usage > dskusgalert)
-                            {
-                                lb4dskval1.BackColor = Color.DimGray;
-                                lb4dskval1.Text += " 危险";
-                            }
-                            else
-                            {
-                                lb4dskval1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(87)))), ((int)(((byte)(78)))));
-                                lb4dskval1.Text = ((int)(usage * 100)).ToString() + "%";
-                            }
+                            dskarr();
+
                             break;
                         case 2:
-                            if (disk["Description"].ToString().Contains("移动"))
-                            {
-                                pic4dsk2.ImageLocation = @"img\usb.png";
-                            }
-                            lb4dsk2.Text = disk["VolumeName"].ToString() + "（" + disk["Name"].ToString() + "）";
-                            lb4dskval2.Width = (int)(usage * 160);
-                            lb4dskval2.Text = ((int)(usage * 100)).ToString() + "%";
-                            lb4usg2.Text = "已用"+usedSpace.ToString() + "GB；剩余" + freeSpace.ToString() + "GB";
-                            lb4dsk2.Visible = true;
-                            lb4dskval2.Visible = true;
-                            lb4dsktol2.Visible = true;
-                            lb4usg2.Visible = true;
-                            pic4dsk2.Visible = true;
-                            if (usage > dskusgalert)
-                            {
-                                lb4dskval2.BackColor = Color.DimGray;
-                                lb4dskval2.Text += " 危险";
-                            }
-                            else
-                            {
-                                lb4dskval2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(87)))), ((int)(((byte)(78)))));
-                                lb4dskval2.Text = ((int)(usage * 100)).ToString() + "%";
-                            }
+                            dskarr();
                             break;
                         case 3:
-                            if (disk["Description"].ToString().Contains("移动"))
-                            {
-                                pic4dsk3.ImageLocation = @"img\usb.png";
-                            }
-                            lb4dsk3.Text = disk["VolumeName"].ToString() + "（" + disk["Name"].ToString() + "）";
-                            lb4dskval3.Width = (int)(usage * 160);
-                            lb4dskval3.Text = ((int)(usage * 100)).ToString() + "%";
-                            lb4usg3.Text = "已用"+usedSpace.ToString() + "GB；剩余" + freeSpace.ToString() + "GB";
-                            lb4dsk3.Visible = true;
-                            lb4dskval3.Visible = true;
-                            lb4dsktol3.Visible = true;
-                            lb4usg3.Visible = true;
-                            pic4dsk3.Visible = true;
-                            if (usage > dskusgalert)
-                            {
-                                lb4dskval3.BackColor = Color.DimGray;
-                                lb4dskval3.Text += " 危险";
-                            }
-                            else
-                            {
-                                lb4dskval3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(87)))), ((int)(((byte)(78)))));
-                                lb4dskval3.Text = ((int)(usage * 100)).ToString() + "%";
-                            }
+                            dskarr();
                             break;
                         case 4:
-                            if (disk["Description"].ToString().Contains("移动"))
-                            {
-                                pic4dsk4.ImageLocation = @"img\usb.png";
-                            }
-                            lb4dsk4.Text = disk["VolumeName"].ToString() + "（" + disk["Name"].ToString() + "）";
-                            lb4dskval4.Width = (int)(usage * 160);
-                            lb4dskval4.Text = ((int)(usage * 100)).ToString() + "%";
-                            lb4usg4.Text = "已用"+usedSpace.ToString() + "GB；剩余" + freeSpace.ToString() + "GB";
-                            lb4dsk4.Visible = true;
-                            lb4dskval4.Visible = true;
-                            lb4dsktol4.Visible = true;
-                            lb4usg4.Visible = true;
-                            pic4dsk4.Visible = true;
-                            if (usage > dskusgalert)
-                            {
-                                lb4dskval4.BackColor = Color.DimGray;
-                                lb4dskval4.Text += " 危险";
-                            }
-                            else
-                            {
-                                lb4dskval4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(87)))), ((int)(((byte)(78)))));
-                                lb4dskval4.Text = ((int)(usage * 100)).ToString() + "%";
-                            }
+                            dskarr();
                             break;
                         case 5:
-                            if (disk["Description"].ToString().Contains("移动"))
-                            {
-                                pic4dsk5.ImageLocation = @"img\usb.png";
-                            }
-                            lb4dsk5.Text = disk["VolumeName"].ToString() + "（" + disk["Name"].ToString() + "）";
-                            lb4dskval5.Width = (int)(usage * 160);
-                            lb4dskval5.Text = ((int)(usage * 100)).ToString() + "%";
-                            lb4usg5.Text = "已用"+usedSpace.ToString() + "GB；剩余" + freeSpace.ToString() + "GB";
-                            lb4dsk5.Visible = true;
-                            lb4dskval5.Visible = true;
-                            lb4dsktol5.Visible = true;
-                            lb4usg5.Visible = true;
-                            pic4dsk5.Visible = true;
-                            if (usage > dskusgalert)
-                            {
-                                lb4dskval5.BackColor = Color.DimGray;
-                                lb4dskval5.Text += " 危险";
-                            }
-                            else
-                            {
-                                lb4dskval5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(87)))), ((int)(((byte)(78)))));
-                                lb4dskval5.Text = ((int)(usage * 100)).ToString() + "%";
-                            }
+                            dskarr();
                             break;
                         case 6:
-                            if (disk["Description"].ToString().Contains("移动"))
-                            {
-                                pic4dsk6.ImageLocation = @"img\usb.png";
-                            }
-                            lb4dsk6.Text = disk["VolumeName"].ToString() + "（" + disk["Name"].ToString() + "）";
-                            lb4dskval6.Width = (int)(usage * 160);
-                            lb4dskval6.Text = ((int)(usage * 100)).ToString() + "%";
-                            lb4usg6.Text = "已用"+usedSpace.ToString() + "GB；剩余" + freeSpace.ToString() + "GB";
-                            lb4dsk6.Visible = true;
-                            lb4dskval6.Visible = true;
-                            lb4dsktol6.Visible = true;
-                            lb4usg6.Visible = true;
-                            pic4dsk6.Visible = true;
-                            if (usage > dskusgalert)
-                            {
-                                lb4dskval6.BackColor = Color.DimGray;
-                                lb4dskval6.Text += " 危险";
-                            }
-                            else
-                            {
-                                lb4dskval6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(87)))), ((int)(((byte)(78)))));
-                                lb4dskval6.Text = ((int)(usage * 100)).ToString() + "%";
-                            }
+                            dskarr();
                             break;
                     }
-                    dsknum += 1;
+                        dsknum += 1;
                 }
                 catch
                 {
-                    //txt4test.Text += "\r\n无法获取该磁盘信息";
+                    txt4test.Text += "\r\n无法获取该磁盘信息";
                 }
             }
-            if (dsknum >= 6)
+            if (ptnum >= 5)
             {
                 hr4dsk2.Visible = true;
                 hr4dsk1.Visible = true;
             }
             else
             {
-                if (dsknum >= 4)
+                if (ptnum >= 3)
                 {
                     hr4dsk1.Visible = true;
                 }
