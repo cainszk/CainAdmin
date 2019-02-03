@@ -48,10 +48,7 @@ namespace CainAdmin
         {
             if (vername.Contains("专业")|| vername.Contains("企业"))
             {
-                //txt4test.Text += "\r\n是专业版";
                 btn4rungpedit.Enabled = true;
-                btn4runservices.Enabled = true;
-                btn4mstsc.Enabled = true;
             }
         }
         void getvername()//显示系统全称
@@ -635,7 +632,14 @@ namespace CainAdmin
                         var lb4dskval = Controls.Find("lb4dskval" + dsknum.ToString(), true)[0] as Label;
                         var lb4usg = Controls.Find("lb4usg" + dsknum.ToString(), true)[0] as Label;
                         var lb4dsktol = Controls.Find("lb4dsktol" + dsknum.ToString(), true)[0] as Label;
-                        lb4dsk.Text = disk["VolumeName"].ToString() + "（" + disk["Name"].ToString() + "）";
+                        if(disk["VolumeName"].ToString()==null|| disk["VolumeName"].ToString() == "")
+                        {
+                            lb4dsk.Text = "本地磁盘（" + disk["Name"].ToString() + "）";
+                        }
+                        else
+                        {
+                            lb4dsk.Text = disk["VolumeName"].ToString() + "（" + disk["Name"].ToString() + "）";
+                        }
                         lb4dskval.Width = (int)(usage * 160);
                         lb4dskval.Text = ((int)(usage * 100)).ToString() + "%";
                         lb4usg.Text = "已用" + usedSpace.ToString() + "GB；剩余" + freeSpace.ToString() + "GB";
@@ -943,6 +947,76 @@ namespace CainAdmin
             {
                 gettimestamp();
                 lb4status.Text = "//控制面板打开失败！" + timestamp;
+            }
+        }
+        private void btn4appwiz_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Process.Start(@"cmd\appwiz.bat");
+                gettimestamp();
+                lb4status.Text = "//程序和功能打开成功！" + timestamp;
+            }
+            catch
+            {
+                gettimestamp();
+                lb4status.Text = "//程序和功能打开失败！" + timestamp;
+            }
+        }
+        private void btn4taskmgr_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Process.Start(@"cmd\taskmgr.bat");
+                gettimestamp();
+                lb4status.Text = "//任务管理器打开成功！" + timestamp;
+            }
+            catch
+            {
+                gettimestamp();
+                lb4status.Text = "//任务管理器打开失败！" + timestamp;
+            }
+        }
+        private void btn4powercfg_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Process.Start(@"cmd\powercfg.bat");
+                gettimestamp();
+                lb4status.Text = "//电源选项打开成功！" + timestamp;
+            }
+            catch
+            {
+                gettimestamp();
+                lb4status.Text = "//电源选项打开失败！" + timestamp;
+            }
+        }
+        private void btn4explorer_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Process.Start(@"cmd\explorer.bat");
+                gettimestamp();
+                lb4status.Text = "//文件系统打开成功！" + timestamp;
+            }
+            catch
+            {
+                gettimestamp();
+                lb4status.Text = "//文件系统打开失败！" + timestamp;
+            }
+        }
+        private void btn4compmgmt_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Process.Start(@"cmd\compmgmt.bat");
+                gettimestamp();
+                lb4status.Text = "//计算机管理打开成功！" + timestamp;
+            }
+            catch
+            {
+                gettimestamp();
+                lb4status.Text = "//计算机管理打开失败！" + timestamp;
             }
         }
     }

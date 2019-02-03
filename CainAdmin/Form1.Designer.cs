@@ -82,6 +82,13 @@
             this.lb4sysver = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.label62 = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label49 = new System.Windows.Forms.Label();
             this.lb4rm = new System.Windows.Forms.Label();
             this.label45 = new System.Windows.Forms.Label();
@@ -168,6 +175,24 @@
             this.btn4savehosts = new System.Windows.Forms.Button();
             this.txt4myhosts = new System.Windows.Forms.TextBox();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.btn4explorer = new System.Windows.Forms.Button();
+            this.btn4compmgmt = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btn4powercfg = new System.Windows.Forms.Button();
+            this.btn4taskmgr = new System.Windows.Forms.Button();
+            this.label63 = new System.Windows.Forms.Label();
+            this.btn4appwiz = new System.Windows.Forms.Button();
             this.btn4control = new System.Windows.Forms.Button();
             this.btn4diskmgmt = new System.Windows.Forms.Button();
             this.btn4devmgmt = new System.Windows.Forms.Button();
@@ -189,13 +214,6 @@
             this.lb4status = new System.Windows.Forms.Label();
             this.timer4net = new System.Windows.Forms.Timer(this.components);
             this.timer4dskchk = new System.Windows.Forms.Timer(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.label62 = new System.Windows.Forms.Label();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic4dsk6)).BeginInit();
@@ -206,15 +224,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.pic4dsk1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic4logo)).BeginInit();
             this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.tabPage5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -852,10 +870,86 @@
             this.tabPage2.Text = "硬件配置";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.ImageLocation = "";
+            this.pictureBox6.Location = new System.Drawing.Point(14, 469);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(46, 46);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 99;
+            this.pictureBox6.TabStop = false;
+            // 
+            // label62
+            // 
+            this.label62.AutoSize = true;
+            this.label62.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label62.Location = new System.Drawing.Point(72, 439);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(88, 26);
+            this.label62.TabIndex = 98;
+            this.label62.Text = "硬盘信息";
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.ImageLocation = "";
+            this.pictureBox5.Location = new System.Drawing.Point(14, 355);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(46, 46);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 97;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.ImageLocation = "";
+            this.pictureBox4.Location = new System.Drawing.Point(14, 221);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(46, 46);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 96;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.ImageLocation = "";
+            this.pictureBox3.Location = new System.Drawing.Point(14, 92);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(46, 46);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 95;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.ImageLocation = "";
+            this.pictureBox2.Location = new System.Drawing.Point(494, 221);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(46, 46);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 94;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.ImageLocation = "";
+            this.pictureBox1.Location = new System.Drawing.Point(494, 92);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(46, 46);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 93;
+            this.pictureBox1.TabStop = false;
+            // 
             // label49
             // 
             this.label49.AutoSize = true;
-            this.label49.Location = new System.Drawing.Point(66, 376);
+            this.label49.Location = new System.Drawing.Point(73, 376);
             this.label49.Name = "label49";
             this.label49.Size = new System.Drawing.Size(90, 21);
             this.label49.TabIndex = 60;
@@ -865,7 +959,7 @@
             // 
             this.lb4rm.AutoSize = true;
             this.lb4rm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(87)))), ((int)(((byte)(78)))));
-            this.lb4rm.Location = new System.Drawing.Point(165, 376);
+            this.lb4rm.Location = new System.Drawing.Point(172, 376);
             this.lb4rm.Name = "lb4rm";
             this.lb4rm.Size = new System.Drawing.Size(74, 21);
             this.lb4rm.TabIndex = 59;
@@ -874,7 +968,7 @@
             // label45
             // 
             this.label45.AutoSize = true;
-            this.label45.Location = new System.Drawing.Point(66, 492);
+            this.label45.Location = new System.Drawing.Point(73, 492);
             this.label45.Name = "label45";
             this.label45.Size = new System.Drawing.Size(80, 21);
             this.label45.TabIndex = 58;
@@ -884,7 +978,7 @@
             // 
             this.lb4diskid.AutoSize = true;
             this.lb4diskid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(87)))), ((int)(((byte)(78)))));
-            this.lb4diskid.Location = new System.Drawing.Point(165, 492);
+            this.lb4diskid.Location = new System.Drawing.Point(172, 492);
             this.lb4diskid.Name = "lb4diskid";
             this.lb4diskid.Size = new System.Drawing.Size(64, 21);
             this.lb4diskid.TabIndex = 57;
@@ -893,7 +987,7 @@
             // label47
             // 
             this.label47.AutoSize = true;
-            this.label47.Location = new System.Drawing.Point(445, 244);
+            this.label47.Location = new System.Drawing.Point(552, 244);
             this.label47.Name = "label47";
             this.label47.Size = new System.Drawing.Size(74, 21);
             this.label47.TabIndex = 56;
@@ -902,7 +996,7 @@
             // label48
             // 
             this.label48.AutoSize = true;
-            this.label48.Location = new System.Drawing.Point(445, 265);
+            this.label48.Location = new System.Drawing.Point(552, 265);
             this.label48.Name = "label48";
             this.label48.Size = new System.Drawing.Size(96, 21);
             this.label48.TabIndex = 55;
@@ -912,7 +1006,7 @@
             // 
             this.lb4dvc2.AutoSize = true;
             this.lb4dvc2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(87)))), ((int)(((byte)(78)))));
-            this.lb4dvc2.Location = new System.Drawing.Point(544, 244);
+            this.lb4dvc2.Location = new System.Drawing.Point(651, 244);
             this.lb4dvc2.Name = "lb4dvc2";
             this.lb4dvc2.Size = new System.Drawing.Size(58, 21);
             this.lb4dvc2.TabIndex = 54;
@@ -922,7 +1016,7 @@
             // 
             this.lb4mac2.AutoSize = true;
             this.lb4mac2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(87)))), ((int)(((byte)(78)))));
-            this.lb4mac2.Location = new System.Drawing.Point(544, 265);
+            this.lb4mac2.Location = new System.Drawing.Point(651, 265);
             this.lb4mac2.Name = "lb4mac2";
             this.lb4mac2.Size = new System.Drawing.Size(80, 21);
             this.lb4mac2.TabIndex = 53;
@@ -931,7 +1025,7 @@
             // label51
             // 
             this.label51.AutoSize = true;
-            this.label51.Location = new System.Drawing.Point(445, 221);
+            this.label51.Location = new System.Drawing.Point(552, 221);
             this.label51.Name = "label51";
             this.label51.Size = new System.Drawing.Size(58, 21);
             this.label51.TabIndex = 52;
@@ -940,7 +1034,7 @@
             // label52
             // 
             this.label52.AutoSize = true;
-            this.label52.Location = new System.Drawing.Point(445, 286);
+            this.label52.Location = new System.Drawing.Point(552, 286);
             this.label52.Name = "label52";
             this.label52.Size = new System.Drawing.Size(58, 21);
             this.label52.TabIndex = 51;
@@ -950,7 +1044,7 @@
             // 
             this.label53.AutoSize = true;
             this.label53.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(87)))), ((int)(((byte)(78)))));
-            this.label53.Location = new System.Drawing.Point(544, 221);
+            this.label53.Location = new System.Drawing.Point(651, 221);
             this.label53.Name = "label53";
             this.label53.Size = new System.Drawing.Size(114, 21);
             this.label53.TabIndex = 50;
@@ -960,7 +1054,7 @@
             // 
             this.lb4spd2.AutoSize = true;
             this.lb4spd2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(87)))), ((int)(((byte)(78)))));
-            this.lb4spd2.Location = new System.Drawing.Point(544, 286);
+            this.lb4spd2.Location = new System.Drawing.Point(651, 286);
             this.lb4spd2.Name = "lb4spd2";
             this.lb4spd2.Size = new System.Drawing.Size(42, 21);
             this.lb4spd2.TabIndex = 49;
@@ -969,7 +1063,7 @@
             // label46
             // 
             this.label46.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label46.Location = new System.Drawing.Point(470, 198);
+            this.label46.Location = new System.Drawing.Point(577, 198);
             this.label46.Name = "label46";
             this.label46.Size = new System.Drawing.Size(106, 2);
             this.label46.TabIndex = 48;
@@ -977,7 +1071,7 @@
             // label39
             // 
             this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(445, 115);
+            this.label39.Location = new System.Drawing.Point(552, 115);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(74, 21);
             this.label39.TabIndex = 47;
@@ -986,7 +1080,7 @@
             // label43
             // 
             this.label43.AutoSize = true;
-            this.label43.Location = new System.Drawing.Point(445, 136);
+            this.label43.Location = new System.Drawing.Point(552, 136);
             this.label43.Name = "label43";
             this.label43.Size = new System.Drawing.Size(96, 21);
             this.label43.TabIndex = 46;
@@ -996,7 +1090,7 @@
             // 
             this.lb4dvc1.AutoSize = true;
             this.lb4dvc1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(87)))), ((int)(((byte)(78)))));
-            this.lb4dvc1.Location = new System.Drawing.Point(544, 115);
+            this.lb4dvc1.Location = new System.Drawing.Point(651, 115);
             this.lb4dvc1.Name = "lb4dvc1";
             this.lb4dvc1.Size = new System.Drawing.Size(58, 21);
             this.lb4dvc1.TabIndex = 45;
@@ -1006,7 +1100,7 @@
             // 
             this.lb4mac1.AutoSize = true;
             this.lb4mac1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(87)))), ((int)(((byte)(78)))));
-            this.lb4mac1.Location = new System.Drawing.Point(544, 136);
+            this.lb4mac1.Location = new System.Drawing.Point(651, 136);
             this.lb4mac1.Name = "lb4mac1";
             this.lb4mac1.Size = new System.Drawing.Size(80, 21);
             this.lb4mac1.TabIndex = 44;
@@ -1015,7 +1109,7 @@
             // label32
             // 
             this.label32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label32.Location = new System.Drawing.Point(86, 422);
+            this.label32.Location = new System.Drawing.Point(93, 422);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(106, 2);
             this.label32.TabIndex = 43;
@@ -1023,7 +1117,7 @@
             // label31
             // 
             this.label31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label31.Location = new System.Drawing.Point(86, 309);
+            this.label31.Location = new System.Drawing.Point(93, 309);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(106, 2);
             this.label31.TabIndex = 42;
@@ -1031,7 +1125,7 @@
             // label30
             // 
             this.label30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label30.Location = new System.Drawing.Point(86, 174);
+            this.label30.Location = new System.Drawing.Point(93, 174);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(106, 2);
             this.label30.TabIndex = 41;
@@ -1051,7 +1145,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label16.Location = new System.Drawing.Point(65, 64);
+            this.label16.Location = new System.Drawing.Point(72, 64);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(50, 26);
             this.label16.TabIndex = 23;
@@ -1061,7 +1155,7 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label15.Location = new System.Drawing.Point(65, 193);
+            this.label15.Location = new System.Drawing.Point(72, 193);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(88, 26);
             this.label15.TabIndex = 22;
@@ -1071,7 +1165,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label14.Location = new System.Drawing.Point(65, 329);
+            this.label14.Location = new System.Drawing.Point(72, 329);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(88, 26);
             this.label14.TabIndex = 21;
@@ -1081,7 +1175,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label13.Location = new System.Drawing.Point(444, 64);
+            this.label13.Location = new System.Drawing.Point(551, 64);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(88, 26);
             this.label13.TabIndex = 20;
@@ -1090,7 +1184,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(66, 265);
+            this.label11.Location = new System.Drawing.Point(73, 265);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(85, 21);
             this.label11.TabIndex = 19;
@@ -1100,7 +1194,7 @@
             // 
             this.lb4biosid.AutoSize = true;
             this.lb4biosid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(87)))), ((int)(((byte)(78)))));
-            this.lb4biosid.Location = new System.Drawing.Point(165, 265);
+            this.lb4biosid.Location = new System.Drawing.Point(172, 265);
             this.lb4biosid.Name = "lb4biosid";
             this.lb4biosid.Size = new System.Drawing.Size(69, 21);
             this.lb4biosid.TabIndex = 18;
@@ -1109,7 +1203,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(66, 113);
+            this.label10.Location = new System.Drawing.Point(73, 113);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(79, 21);
             this.label10.TabIndex = 17;
@@ -1119,7 +1213,7 @@
             // 
             this.lb4pcname.AutoSize = true;
             this.lb4pcname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(87)))), ((int)(((byte)(78)))));
-            this.lb4pcname.Location = new System.Drawing.Point(165, 113);
+            this.lb4pcname.Location = new System.Drawing.Point(172, 113);
             this.lb4pcname.Name = "lb4pcname";
             this.lb4pcname.Size = new System.Drawing.Size(63, 21);
             this.lb4pcname.TabIndex = 16;
@@ -1128,7 +1222,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(66, 355);
+            this.label9.Location = new System.Drawing.Point(73, 355);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(90, 21);
             this.label9.TabIndex = 15;
@@ -1138,7 +1232,7 @@
             // 
             this.lb4pm.AutoSize = true;
             this.lb4pm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(87)))), ((int)(((byte)(78)))));
-            this.lb4pm.Location = new System.Drawing.Point(165, 355);
+            this.lb4pm.Location = new System.Drawing.Point(172, 355);
             this.lb4pm.Name = "lb4pm";
             this.lb4pm.Size = new System.Drawing.Size(74, 21);
             this.lb4pm.TabIndex = 14;
@@ -1147,7 +1241,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(66, 92);
+            this.label8.Location = new System.Drawing.Point(73, 92);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(79, 21);
             this.label8.TabIndex = 13;
@@ -1157,7 +1251,7 @@
             // 
             this.lb4pctype.AutoSize = true;
             this.lb4pctype.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(87)))), ((int)(((byte)(78)))));
-            this.lb4pctype.Location = new System.Drawing.Point(165, 92);
+            this.lb4pctype.Location = new System.Drawing.Point(172, 92);
             this.lb4pctype.Name = "lb4pctype";
             this.lb4pctype.Size = new System.Drawing.Size(63, 21);
             this.lb4pctype.TabIndex = 12;
@@ -1166,7 +1260,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(66, 134);
+            this.label7.Location = new System.Drawing.Point(73, 134);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(74, 21);
             this.label7.TabIndex = 11;
@@ -1176,7 +1270,7 @@
             // 
             this.lb4usrname.AutoSize = true;
             this.lb4usrname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(87)))), ((int)(((byte)(78)))));
-            this.lb4usrname.Location = new System.Drawing.Point(165, 134);
+            this.lb4usrname.Location = new System.Drawing.Point(172, 134);
             this.lb4usrname.Name = "lb4usrname";
             this.lb4usrname.Size = new System.Drawing.Size(58, 21);
             this.lb4usrname.TabIndex = 10;
@@ -1185,7 +1279,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(66, 469);
+            this.label6.Location = new System.Drawing.Point(73, 469);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(90, 21);
             this.label6.TabIndex = 9;
@@ -1195,7 +1289,7 @@
             // 
             this.lb4diskmdl.AutoSize = true;
             this.lb4diskmdl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(87)))), ((int)(((byte)(78)))));
-            this.lb4diskmdl.Location = new System.Drawing.Point(165, 469);
+            this.lb4diskmdl.Location = new System.Drawing.Point(172, 469);
             this.lb4diskmdl.Name = "lb4diskmdl";
             this.lb4diskmdl.Size = new System.Drawing.Size(74, 21);
             this.lb4diskmdl.TabIndex = 8;
@@ -1204,7 +1298,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(445, 92);
+            this.label2.Location = new System.Drawing.Point(552, 92);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 21);
             this.label2.TabIndex = 7;
@@ -1213,7 +1307,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(445, 157);
+            this.label3.Location = new System.Drawing.Point(552, 157);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(58, 21);
             this.label3.TabIndex = 6;
@@ -1222,7 +1316,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(66, 242);
+            this.label4.Location = new System.Drawing.Point(73, 242);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(80, 21);
             this.label4.TabIndex = 5;
@@ -1231,7 +1325,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(66, 221);
+            this.label5.Location = new System.Drawing.Point(73, 221);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(81, 21);
             this.label5.TabIndex = 4;
@@ -1241,7 +1335,7 @@
             // 
             this.label44.AutoSize = true;
             this.label44.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(87)))), ((int)(((byte)(78)))));
-            this.label44.Location = new System.Drawing.Point(544, 92);
+            this.label44.Location = new System.Drawing.Point(651, 92);
             this.label44.Name = "label44";
             this.label44.Size = new System.Drawing.Size(122, 21);
             this.label44.TabIndex = 3;
@@ -1251,7 +1345,7 @@
             // 
             this.lb4spd1.AutoSize = true;
             this.lb4spd1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(87)))), ((int)(((byte)(78)))));
-            this.lb4spd1.Location = new System.Drawing.Point(544, 157);
+            this.lb4spd1.Location = new System.Drawing.Point(651, 157);
             this.lb4spd1.Name = "lb4spd1";
             this.lb4spd1.Size = new System.Drawing.Size(42, 21);
             this.lb4spd1.TabIndex = 2;
@@ -1261,7 +1355,7 @@
             // 
             this.lb4plcid.AutoSize = true;
             this.lb4plcid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(87)))), ((int)(((byte)(78)))));
-            this.lb4plcid.Location = new System.Drawing.Point(165, 242);
+            this.lb4plcid.Location = new System.Drawing.Point(172, 242);
             this.lb4plcid.Name = "lb4plcid";
             this.lb4plcid.Size = new System.Drawing.Size(64, 21);
             this.lb4plcid.TabIndex = 1;
@@ -1271,7 +1365,7 @@
             // 
             this.lb4cpuid.AutoSize = true;
             this.lb4cpuid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(87)))), ((int)(((byte)(78)))));
-            this.lb4cpuid.Location = new System.Drawing.Point(165, 221);
+            this.lb4cpuid.Location = new System.Drawing.Point(172, 221);
             this.lb4cpuid.Name = "lb4cpuid";
             this.lb4cpuid.Size = new System.Drawing.Size(65, 21);
             this.lb4cpuid.TabIndex = 0;
@@ -1722,6 +1816,24 @@
             // 
             // tabPage5
             // 
+            this.tabPage5.Controls.Add(this.button7);
+            this.tabPage5.Controls.Add(this.button8);
+            this.tabPage5.Controls.Add(this.button9);
+            this.tabPage5.Controls.Add(this.button10);
+            this.tabPage5.Controls.Add(this.button11);
+            this.tabPage5.Controls.Add(this.button12);
+            this.tabPage5.Controls.Add(this.btn4explorer);
+            this.tabPage5.Controls.Add(this.btn4compmgmt);
+            this.tabPage5.Controls.Add(this.button6);
+            this.tabPage5.Controls.Add(this.button5);
+            this.tabPage5.Controls.Add(this.button4);
+            this.tabPage5.Controls.Add(this.button3);
+            this.tabPage5.Controls.Add(this.button2);
+            this.tabPage5.Controls.Add(this.button1);
+            this.tabPage5.Controls.Add(this.btn4powercfg);
+            this.tabPage5.Controls.Add(this.btn4taskmgr);
+            this.tabPage5.Controls.Add(this.label63);
+            this.tabPage5.Controls.Add(this.btn4appwiz);
             this.tabPage5.Controls.Add(this.btn4control);
             this.tabPage5.Controls.Add(this.btn4diskmgmt);
             this.tabPage5.Controls.Add(this.btn4devmgmt);
@@ -1739,6 +1851,221 @@
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "科学模式";
             this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button7.Location = new System.Drawing.Point(737, 183);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(136, 31);
+            this.button7.TabIndex = 68;
+            this.button7.Text = "计算机管理";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Visible = false;
+            // 
+            // button8
+            // 
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button8.Location = new System.Drawing.Point(595, 183);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(136, 31);
+            this.button8.TabIndex = 67;
+            this.button8.Text = "电源选项";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Visible = false;
+            // 
+            // button9
+            // 
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button9.Location = new System.Drawing.Point(311, 183);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(136, 31);
+            this.button9.TabIndex = 66;
+            this.button9.Text = "程序和功能";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Visible = false;
+            // 
+            // button10
+            // 
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button10.Location = new System.Drawing.Point(169, 183);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(136, 31);
+            this.button10.TabIndex = 65;
+            this.button10.Text = "磁盘管理";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Visible = false;
+            // 
+            // button11
+            // 
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button11.Location = new System.Drawing.Point(453, 183);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(136, 31);
+            this.button11.TabIndex = 64;
+            this.button11.Text = "远程控制";
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Visible = false;
+            // 
+            // button12
+            // 
+            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button12.Location = new System.Drawing.Point(27, 183);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(136, 31);
+            this.button12.TabIndex = 63;
+            this.button12.Text = "注册表";
+            this.button12.UseVisualStyleBackColor = true;
+            this.button12.Visible = false;
+            // 
+            // btn4explorer
+            // 
+            this.btn4explorer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn4explorer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn4explorer.Location = new System.Drawing.Point(737, 109);
+            this.btn4explorer.Name = "btn4explorer";
+            this.btn4explorer.Size = new System.Drawing.Size(136, 31);
+            this.btn4explorer.TabIndex = 62;
+            this.btn4explorer.Text = "文件系统";
+            this.btn4explorer.UseVisualStyleBackColor = true;
+            this.btn4explorer.Click += new System.EventHandler(this.btn4explorer_Click);
+            // 
+            // btn4compmgmt
+            // 
+            this.btn4compmgmt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn4compmgmt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn4compmgmt.Location = new System.Drawing.Point(737, 146);
+            this.btn4compmgmt.Name = "btn4compmgmt";
+            this.btn4compmgmt.Size = new System.Drawing.Size(136, 31);
+            this.btn4compmgmt.TabIndex = 61;
+            this.btn4compmgmt.Text = "计算机管理";
+            this.btn4compmgmt.UseVisualStyleBackColor = true;
+            this.btn4compmgmt.Click += new System.EventHandler(this.btn4compmgmt_Click);
+            // 
+            // button6
+            // 
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button6.Location = new System.Drawing.Point(460, 331);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(136, 31);
+            this.button6.TabIndex = 60;
+            this.button6.Text = "任务管理器";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Visible = false;
+            // 
+            // button5
+            // 
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button5.Location = new System.Drawing.Point(452, 323);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(136, 31);
+            this.button5.TabIndex = 59;
+            this.button5.Text = "任务管理器";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Visible = false;
+            // 
+            // button4
+            // 
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button4.Location = new System.Drawing.Point(444, 315);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(136, 31);
+            this.button4.TabIndex = 58;
+            this.button4.Text = "任务管理器";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Visible = false;
+            // 
+            // button3
+            // 
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button3.Location = new System.Drawing.Point(436, 307);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(136, 31);
+            this.button3.TabIndex = 57;
+            this.button3.Text = "任务管理器";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Visible = false;
+            // 
+            // button2
+            // 
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button2.Location = new System.Drawing.Point(428, 299);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(136, 31);
+            this.button2.TabIndex = 56;
+            this.button2.Text = "任务管理器";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Visible = false;
+            // 
+            // button1
+            // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button1.Location = new System.Drawing.Point(420, 291);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(136, 31);
+            this.button1.TabIndex = 55;
+            this.button1.Text = "任务管理器";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Visible = false;
+            // 
+            // btn4powercfg
+            // 
+            this.btn4powercfg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn4powercfg.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn4powercfg.Location = new System.Drawing.Point(595, 146);
+            this.btn4powercfg.Name = "btn4powercfg";
+            this.btn4powercfg.Size = new System.Drawing.Size(136, 31);
+            this.btn4powercfg.TabIndex = 54;
+            this.btn4powercfg.Text = "电源选项";
+            this.btn4powercfg.UseVisualStyleBackColor = true;
+            this.btn4powercfg.Click += new System.EventHandler(this.btn4powercfg_Click);
+            // 
+            // btn4taskmgr
+            // 
+            this.btn4taskmgr.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn4taskmgr.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn4taskmgr.Location = new System.Drawing.Point(595, 109);
+            this.btn4taskmgr.Name = "btn4taskmgr";
+            this.btn4taskmgr.Size = new System.Drawing.Size(136, 31);
+            this.btn4taskmgr.TabIndex = 53;
+            this.btn4taskmgr.Text = "任务管理器";
+            this.btn4taskmgr.UseVisualStyleBackColor = true;
+            this.btn4taskmgr.Click += new System.EventHandler(this.btn4taskmgr_Click);
+            // 
+            // label63
+            // 
+            this.label63.AutoSize = true;
+            this.label63.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label63.ForeColor = System.Drawing.Color.DarkGray;
+            this.label63.Location = new System.Drawing.Point(135, 237);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(351, 20);
+            this.label63.TabIndex = 52;
+            this.label63.Text = "*如果您的系统不是专业版级别，将无法使用本栏目功能";
+            // 
+            // btn4appwiz
+            // 
+            this.btn4appwiz.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn4appwiz.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn4appwiz.Location = new System.Drawing.Point(311, 146);
+            this.btn4appwiz.Name = "btn4appwiz";
+            this.btn4appwiz.Size = new System.Drawing.Size(136, 31);
+            this.btn4appwiz.TabIndex = 51;
+            this.btn4appwiz.Text = "程序和功能";
+            this.btn4appwiz.UseVisualStyleBackColor = true;
+            this.btn4appwiz.Click += new System.EventHandler(this.btn4appwiz_Click);
             // 
             // btn4control
             // 
@@ -1778,10 +2105,9 @@
             // 
             // btn4mstsc
             // 
-            this.btn4mstsc.Enabled = false;
             this.btn4mstsc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn4mstsc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(87)))), ((int)(((byte)(78)))));
-            this.btn4mstsc.Location = new System.Drawing.Point(27, 307);
+            this.btn4mstsc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn4mstsc.Location = new System.Drawing.Point(453, 146);
             this.btn4mstsc.Name = "btn4mstsc";
             this.btn4mstsc.Size = new System.Drawing.Size(136, 31);
             this.btn4mstsc.TabIndex = 47;
@@ -1793,7 +2119,7 @@
             // 
             this.label57.AutoSize = true;
             this.label57.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label57.Location = new System.Drawing.Point(22, 193);
+            this.label57.Location = new System.Drawing.Point(22, 232);
             this.label57.Name = "label57";
             this.label57.Size = new System.Drawing.Size(107, 26);
             this.label57.TabIndex = 46;
@@ -1816,7 +2142,7 @@
             this.btn4rungpedit.Enabled = false;
             this.btn4rungpedit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn4rungpedit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(87)))), ((int)(((byte)(78)))));
-            this.btn4rungpedit.Location = new System.Drawing.Point(27, 270);
+            this.btn4rungpedit.Location = new System.Drawing.Point(27, 271);
             this.btn4rungpedit.Name = "btn4rungpedit";
             this.btn4rungpedit.Size = new System.Drawing.Size(136, 31);
             this.btn4rungpedit.TabIndex = 44;
@@ -1826,10 +2152,9 @@
             // 
             // btn4runservices
             // 
-            this.btn4runservices.Enabled = false;
             this.btn4runservices.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn4runservices.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(87)))), ((int)(((byte)(78)))));
-            this.btn4runservices.Location = new System.Drawing.Point(27, 233);
+            this.btn4runservices.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn4runservices.Location = new System.Drawing.Point(453, 109);
             this.btn4runservices.Name = "btn4runservices";
             this.btn4runservices.Size = new System.Drawing.Size(136, 31);
             this.btn4runservices.TabIndex = 43;
@@ -1955,82 +2280,6 @@
             this.timer4dskchk.Interval = 5000;
             this.timer4dskchk.Tick += new System.EventHandler(this.timer4dskchk_Tick);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.ImageLocation = "";
-            this.pictureBox1.Location = new System.Drawing.Point(393, 92);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(46, 46);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 93;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.ImageLocation = "";
-            this.pictureBox2.Location = new System.Drawing.Point(393, 221);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(46, 46);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 94;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.ImageLocation = "";
-            this.pictureBox3.Location = new System.Drawing.Point(14, 92);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(46, 46);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 95;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.ImageLocation = "";
-            this.pictureBox4.Location = new System.Drawing.Point(14, 221);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(46, 46);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 96;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.ImageLocation = "";
-            this.pictureBox5.Location = new System.Drawing.Point(14, 355);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(46, 46);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 97;
-            this.pictureBox5.TabStop = false;
-            // 
-            // label62
-            // 
-            this.label62.AutoSize = true;
-            this.label62.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label62.Location = new System.Drawing.Point(65, 439);
-            this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(88, 26);
-            this.label62.TabIndex = 98;
-            this.label62.Text = "硬盘信息";
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.ImageLocation = "";
-            this.pictureBox6.Location = new System.Drawing.Point(14, 469);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(46, 46);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 99;
-            this.pictureBox6.TabStop = false;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -2059,18 +2308,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.pic4logo)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2244,6 +2493,24 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Button btn4appwiz;
+        private System.Windows.Forms.Label label63;
+        private System.Windows.Forms.Button btn4taskmgr;
+        private System.Windows.Forms.Button btn4powercfg;
+        private System.Windows.Forms.Button btn4explorer;
+        private System.Windows.Forms.Button btn4compmgmt;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button button12;
     }
 }
 
